@@ -59,7 +59,7 @@
      (shell-command-to-string
       (concat "find " (rails-dirs rails-root rails-project-directories)
               " "
-              (find-to-string `(or (name "*.rb" "*.erb" "*.js*" "*.css*" "*.yml"))))))))
+              (find-to-string `(or (name "*.rb" "*.erb" "*.js*" "*.css*" "*.yml" "*.coffee" "*.haml"))))))))
 
 (defun current-rails-recentf ()
   (when rails-root
